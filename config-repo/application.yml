@@ -1,0 +1,18 @@
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.web: INFO
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 10000
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

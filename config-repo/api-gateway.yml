@@ -1,0 +1,23 @@
+
+zuul:
+  ignoredServices: '*'
+  prefix: /api
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+#  routes:
+#    post:
+#        path: /post/**
+#        stripPrefix: false
+#        sensitiveHeaders:
+
+server:
+  port: 4000
+
+spring:
+  aop:
+    proxy-target-class: true
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
